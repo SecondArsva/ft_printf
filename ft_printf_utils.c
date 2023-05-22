@@ -6,7 +6,7 @@
 /*   By: davidga2 <davidga2@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 20:08:28 by davidga2          #+#    #+#             */
-/*   Updated: 2023/05/20 14:56:12 by davidga2         ###   ########.fr       */
+/*   Updated: 2023/05/22 20:39:18 by davidga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_putchar_count(char c, int *ctr)
 {
-	int	write_return;
-
-	write_return = write (1, &c, 1);
+	write (1, &c, 1);
 	(*ctr)++;
 }
 

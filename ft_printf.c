@@ -6,7 +6,7 @@
 /*   By: davidga2 <davidga2@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 12:55:00 by davidga2          #+#    #+#             */
-/*   Updated: 2023/05/20 14:56:08 by davidga2         ###   ########.fr       */
+/*   Updated: 2023/05/22 20:44:02 by davidga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,13 @@ int	main(void)
 	unsigned int	u = -50;
 	unsigned int	xX = -42;
 
+	char			*null_ptr = NULL;
+
 	ft_printf("%c\n", '0');
 	
 	// Contempla este caso: ft_printf("%"); alepinto.
 	
-	printf("----- printf() -----\n");
+	printf("\n----- printf() -----\n");
 	printf_return = printf("%c %s %p %d %i %u %x %X %% \n",
 			c, s, p, d, i, u, xX, xX);
 	printf("\n");
@@ -92,7 +94,14 @@ int	main(void)
 	//ft_printf("--- hexa: %x\n--- HEXA: %X\n", xX, xX);
 	printf("\nprintf() return: %i\n", printf_return);	
 	ft_printf("\nft_printf return: %i\n", ft_printf_return);
-
+	
 	printf("\n%i | %i\n", printf_return, ft_printf_return);
+
+	printf("\n----- printf() -----\n\n");
+	printf("null_ptr value: '%s'\n", null_ptr);
+	printf("null_ptr pointered value: '%p'\n\n", null_ptr);
+	
+	// ft_printf("%s\n", '!'); // Placa de aluminio en la tostadora de mpascual.
+	
 	return (0);
 }*/
